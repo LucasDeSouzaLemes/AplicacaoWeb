@@ -2,14 +2,27 @@
 
 Este projeto foi desenvolvido para criar uma aplicação web para coletar pesquisas de satisfação dos alunos do Curso de Análise e Desenvolvimento de Sistemas. A aplicação utiliza Docker para fornecer um ambiente de desenvolvimento consistente e portátil.
 
+
 ## Estrutura do Projeto
+
+├── AplicacaoWeb<br>
+├── MongoDB<br>
+│ ├── dockerfile<br>
+│ ├── README.md<br>
+│ ├── Unifaat.md<br>
+├── Nodejs<br>
+│ ├── dockerfile<br>
+├── PostgreSQL<br>
+│ ├── dockerfile<br>
+├── docker-compose.yml<br>
+└── Readme.md<br>
 
 O projeto consiste nos seguintes componentes principais:
 
 - **Containers Docker**:
-  - **PostgreSQL**: Um banco de dados relacional para armazenar dados estruturados.
   - **MongoDB**: Um banco de dados NoSQL para armazenamento de dados mais flexíveis.
   - **Node.js**: O servidor da aplicação que executa a aplicação de pesquisa de satisfação.
+  - **PostgreSQL**: Um banco de dados relacional para armazenar dados estruturados.
 
 - **Código Fonte**:
   - O código da aplicação está localizado no diretório `src`, que inclui o arquivo principal da aplicação (`app.js`) e o `package.json` para gerenciar as dependências.
