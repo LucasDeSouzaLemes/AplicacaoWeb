@@ -34,7 +34,7 @@ Para configurar o ambiente de desenvolvimento, siga estes passos:
 1. **Clone o Repositório**:
    ```bash
    git clone <repository-url>
-   cd satisfaction-survey-system
+   cd AplicacaoWeb
    ```
 
 2. **Construa e Execute os Containers:** Use o Docker Compose para construir e executar os containers. No diretório raiz do projeto, execute:
@@ -46,8 +46,8 @@ Para configurar o ambiente de desenvolvimento, siga estes passos:
 
 ## Configuração
 
-- **PostgreSQL**: : O container do PostgreSQL está configurado com acesso administrativo. Você pode personalizar as configurações do banco de dados no arquivo `docker/postgres/Dockerfile`.
+- **PostgreSQL**: : O container do PostgreSQL está configurado com acesso administrativo. Você pode personalizar as configurações do banco de dados no arquivo `AplicacaoWeb/postgres/Dockerfile`.
 
-- **MongoDB**: O container do MongoDB também está configurado com acesso administrativo. A configuração pode ser ajustada no arquivo `docker/mongodb/Dockerfile`.
+- **MongoDB**: O container do MongoDB também está configurado com acesso administrativo. A configuração pode ser ajustada no arquivo `AplicacaoWeb/mongodb/Dockerfile`.
 
-- **Node.js**: O container do Node.js executa a versão 22 e está configurado no arquivo `docker/nodejs/Dockerfile`.
+- **Node.js**: O container do Node.js executa a versão 22 e está configurado no arquivo `AplicacaoWeb/nodejs/Dockerfile`.
