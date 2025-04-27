@@ -2,7 +2,7 @@
 
 ### 1.Clientes
 
-* Para inserir os dados na coleção "client" basta usar o seguinte comando:
+* Para inserir os dados na coleção `client` basta usar o seguinte comando:
 ```bash
 db.client.insertMany([
   {
@@ -37,7 +37,7 @@ db.client.insertMany([
 ```
 ## 2.Processos
 
-* Para inserir os seguintes processos para os clientes na coleção "client_processes" basta usar o seguinte comando:
+* Para inserir os seguintes processos para os clientes na coleção `client_processes` basta usar o seguinte comando:
 ```bash
 db.client_processes.insertMany([
   {
@@ -62,7 +62,7 @@ db.client_processes.insertMany([
 ```
 ## 3.Eventos
 
-* Para inserir os eventos na coleção "events" basta usar o seguinte comando:
+* Para inserir os eventos na coleção `events` basta usar o seguinte comando:
 ```bash
 db.events.insertMany([
   {
