@@ -5,7 +5,7 @@ Este projeto foi desenvolvido para criar uma aplicação web para coletar pesqui
 
 ## Estrutura do Projeto
 
-├── AplicacaoWeb<br>
+AplicacaoWeb<br>
 ├── MongoDB<br>
 │ ├── dockerfile<br>
 │ ├── README.md<br>
