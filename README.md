@@ -9,11 +9,11 @@ Este projeto foi desenvolvido para criar uma aplicação web para coletar pesqui
 ├── MongoDB<br>
 │ ├── dockerfile<br>
 │ ├── README.md<br>
-│ ├── Unifaat.md<br>
+│ └── Unifaat.md<br>
 ├── Nodejs<br>
-│ ├── dockerfile<br>
+│ └── dockerfile<br>
 ├── PostgreSQL<br>
-│ ├── dockerfile<br>
+│ └── dockerfile<br>
 ├── docker-compose.yml<br>
 └── Readme.md<br>
 
