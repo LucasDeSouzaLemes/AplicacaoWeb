@@ -4,7 +4,7 @@
 
 * Para inserir os dados na coleção "client" basta usar o seguinte comando:
 ```bash
-db.client.insertMany([<br>
+db.client.insertMany([
   {
     "full_name": "Maria Silva",
     "cpf": "12345678901",
