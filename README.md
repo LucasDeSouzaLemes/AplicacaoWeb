@@ -16,8 +16,43 @@ AplicacaoWeb<br>
 │ └── dockerfile<br>
 ├── docker-compose.yml<br>
 └── Readme.md<br>
+## Como Rodar o Docker-Compose
 
-O projeto consiste nos seguintes componentes principais:
+
+Para rodar o projeto utilizando o Docker-Compose, siga os passos abaixo:
+
+1. Clone o Repositório:
+   ```bash
+   git clone <repository-url>
+   cd AplicacaoWeb
+   ```
+
+2. Certifique-se de que você tem o Docker e o Docker-Compose instalados na sua máquina:
+
+```bash
+docker --version
+docker-compose --version
+```
+3. No diretório raiz do projeto, execute o seguinte comando para parar e remover quaisquer contêineres existentes:
+
+```bash
+docker-compose down
+```
+4. Remova o volume de dados do PostgreSQL (se necessário):
+
+```bash
+docker volume rm AulaMicroservico_postgres_data
+```
+
+5. Execute o comando para iniciar os contêineres com o Docker-Compose:
+
+```bash
+docker-compose up --build
+```
+
+6. Assim que os containers estiverem em execução, você pode acessar a aplicação em `http://localhost:3000`.
+
+## O projeto consiste nos seguintes componentes principais:
 
 - **Containers Docker**:
   - **MongoDB**: Um banco de dados NoSQL para armazenamento de dados mais flexíveis.
@@ -27,22 +62,7 @@ O projeto consiste nos seguintes componentes principais:
 - **Código Fonte**:
   - O código da aplicação está localizado no diretório `src`, que inclui o arquivo principal da aplicação (`app.js`) e o `package.json` para gerenciar as dependências.
 
-## Começando
 
-Para configurar o ambiente de desenvolvimento, siga estes passos:
-
-1. **Clone o Repositório**:
-   ```bash
-   git clone <repository-url>
-   cd AplicacaoWeb
-   ```
-
-2. **Construa e Execute os Containers:** Use o Docker Compose para construir e executar os containers. No diretório raiz do projeto, execute:
-   ```bash
-   docker-compose up -d
-   ```
-
-3. **Acesse a Aplicação:** Assim que os containers estiverem em execução, você pode acessar a aplicação em `http://localhost:3000`.
 
 ## Configuração
 
@@ -51,3 +71,7 @@ Para configurar o ambiente de desenvolvimento, siga estes passos:
 - **MongoDB**: O container do MongoDB também está configurado com acesso administrativo. A configuração pode ser ajustada no arquivo `AplicacaoWeb/mongodb/Dockerfile`.
 
 - **Node.js**: O container do Node.js executa a versão 22 e está configurado no arquivo `AplicacaoWeb/nodejs/Dockerfile`.
+
+## Observações
+
+* Personalize as configurações no arquivo docker-compose.yml conforme necessário.
