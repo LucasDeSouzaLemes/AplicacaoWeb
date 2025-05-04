@@ -28,3 +28,4 @@ Após a construção da imagem, você pode executar um contêiner a partir dela 
 ```bash
 docker run -d -p 27017:27017 --name mongodb-container meu-mongodb
 ```
+
